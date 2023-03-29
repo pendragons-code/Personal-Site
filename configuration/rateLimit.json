@@ -1,0 +1,16 @@
+{
+	"apiRoutesRateLimit": {
+		"windowMinutes": 1,
+		"maxWindowRequest": 45,
+		"standardHeaders": true,
+		"legacyHeaders": false,
+		"message": "You are being rate-limited, please try again later!"
+	},
+	"frontEndRateLimit": {
+		"windowMinutes": 1,
+		"maxWindowRequest": 150,
+		"standardHeaders": true,
+		"legacyHeaders": false,
+		"message": "You are being rate-limited, please try again later!"
+	}
+}
