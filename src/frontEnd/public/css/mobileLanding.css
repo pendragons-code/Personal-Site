@@ -1,0 +1,44 @@
+#what items {
+	display: block;
+	padding: 1rem;
+}
+
+#what .items .item {
+	margin-right: 1.3rem;
+	align-self: center;
+	margin-bottom: 0;
+}
+
+@media(max-width: 500px) {
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#navbar ul {
+		padding: 0.5rem;
+	}
+
+	#showcase .showcase-content {
+		top: 110px;
+	}
+
+	#who .who-img {
+		display: none;
+	}
+}
+
+@media (max-height: 568px) {
+	#showcase .showcase-content {
+		margin-top: -2rem;
+		top: 140px;
+	}
+
+	.l-heading {
+		font-size: 3rem;
+	}
+
+	.lead {
+		font-size: 1rem;
+	}
+}
