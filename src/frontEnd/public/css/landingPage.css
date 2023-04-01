@@ -1,20 +1,24 @@
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
 }
 
-body {
-    font-family: "monospace";
-    font-weight: "bold";
+body {	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+	font-family: "monospace";
+	font-weight: "bold";
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 p {
-    margin: 0.75rem 0;
+	margin: 0.75rem 0;
 }
 
 .dropbtn {
@@ -58,110 +62,110 @@ p {
   background-color: #1F618D;
 }
 #showcase {
-    background: #382835 url('/2825727.gif') no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-    position: relative;
+	background: #382835 url('/2825727.gif') no-repeat center center/cover;
+	height: 100vh;
+	color: #fff;
+	position: relative;
 }
 
 #showcase .showcase-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 2rem;
-    /* Overlay */
-    position:absolute;
-    top:0;
-    left:0;
-    right: 0;
-    overflow: hidden;
-    bottom: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 2rem;
+	/* Overlay */
+	position:absolute;
+	top:0;
+	left:0;
+	right: 0;
+	overflow: hidden;
+	bottom: 0;
+	color: #fff;
+	background-color: rgba(0,0,0,0.4);
 }
 
 #navbar {
-    display: flex;
-    position: sticky;
-    top:0;
-    background: #382835;
-    color: #382835;
-    justify-content: space-between;
-    z-index: 1;
-    padding: 1rem;
+	display: flex;
+	position: sticky;
+	top:0;
+	background: #382835;
+	color: #382835;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 1rem;
 }
 
 #navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    border-bottom: 3px solid #fff;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	border-bottom: 3px solid #fff;
 }
 
 
 #navbar ul li a {
-    color: #382835;
-    padding: 0.75rem;
-    margin: 0 0.25rem;
+	color: #382835;
+	padding: 0.75rem;
+	margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
-    background: #382835;
-    border-radius: 5px;
+	background: #382835;
+	border-radius: 5px;
 }
 .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
 }
 
 .text-center {
-    text-align:center;
+	text-align:center;
 }
 
 .text-primary {
-    color: #f4f4f4;
+	color: #f4f4f4;
 }
 
 .bg-light {
-    background:  #382835;
-    color: #f4f4f4;
+	background:  #382835;
+	color: #f4f4f4;
 }
 
 .bg-dark {
-    background: #382835;
-    color: #fff;
+	background: #382835;
+	color: #fff;
 }
 
 .bg-primary {
-    background: #1F618D;
-    color: #fff;
+	background: #1F618D;
+	color: #fff;
 }
 
 .l-heading {
-    font-size: 4rem;
-    margin-bottom: 0.75rem;
-    line-height: 1;
+	font-size: 4rem;
+	margin-bottom: 0.75rem;
+	line-height: 1;
 }
 
 .m-heading {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-    line-height: 1;
+	font-size: 2rem;
+	margin-bottom: 0.75rem;
+	line-height: 1;
 }
 .s-heading {
-    font-size: 2rem;
-    margin-top: 0.75rem;
-    line-height: 1.1;
+	font-size: 2rem;
+	margin-top: 0.75rem;
+	line-height: 1.1;
 }
 
 .lead {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
 }
 .logo {
 	text-align: center;
@@ -177,37 +181,37 @@ p {
 .p-3 { padding: 3rem; }
 
 .btn {
-    display: inline-block;
-    color: #fff;
-    background: #1F618D;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 5px;
+	display: inline-block;
+	color: #fff;
+	background: #1F618D;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 5px;
 }
 
 .btn:hover {
-    background: #35637e;
+	background: #35637e;
 }
 
 .btn-dark {
-    background: #382835;
-    color: #fff;
+	background: #382835;
+	color: #fff;
 }
 
 .list {
-    margin: 0.5rem 0;
-    list-style: none;
+	margin: 0.5rem 0;
+	list-style: none;
 }
 
 .list li {
-    padding: 0.5rem 0;
-    border-bottom: #444 dotted 1px;
+	padding: 0.5rem 0;
+	border-bottom: #444 dotted 1px;
 }
 
 /* I hate css, but i too lazy come up with a good name */
 #what .items {
-    display: flex;
-    padding: 1rem;
+	display: flex;
+	padding: 1rem;
 }
 
 #what .items .item {
@@ -258,4 +262,28 @@ p {
 	margin: auto;
 	padding: 0 2rem;
 	overflow: hidden;
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
