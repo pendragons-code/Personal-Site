@@ -4,7 +4,8 @@
 	padding: 0;
 }
 
-body {	animation: fadeIn linear 1s;
+body {
+	animation: fadeIn linear 1s;
 	-webkit-animation: fadeIn linear 1s;
 	-moz-animation: fadeIn linear 1s;
 	-o-animation: fadeIn linear 1;
@@ -22,7 +23,7 @@ p {
 }
 
 .dropbtn {
-  background-color: #382835;
+  background-color: #3f2f38;
   color: #93a48f;
   padding: 10px;
   font-size: 16px;
@@ -62,9 +63,9 @@ p {
   background-color: #1F618D;
 }
 #showcase {
-	background: #382835 url('/wallpaper2.gif') no-repeat center center/cover;
+	background: #3f2f38 url('/wallpaper2.gif') no-repeat center center/cover;
 	height: 100vh;
-	color: #fff;
+	color: #f5bc92;
 	position: relative;
 }
 
@@ -95,8 +96,8 @@ p {
 	display: flex;
 	position: sticky;
 	top:0;
-	background: #382835;
-	color: #382835;
+	background: #3f2f38;
+	color: #f5bc92;
 	justify-content: space-between;
 	z-index: 1;
 	padding: 1rem;
@@ -106,18 +107,18 @@ p {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #f5bc92;
 }
 
 
 #navbar ul li a {
-	color: #382835;
+	color: #3f2f38;
 	padding: 0.75rem;
 	margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
-	background: #382835;
+	background: #3f2f38;
 	border-radius: 5px;
 }
 .container {
@@ -132,22 +133,22 @@ p {
 }
 
 .text-primary {
-	color: #f4f4f4;
+	color: #f5bc92;
 }
 
 .bg-light {
-	background:  #382835;
-	color: #f4f4f4;
+	background:  #3f2f38;
+	color: #f5bc92;
 }
 
 .bg-dark {
-	background: #382835;
-	color: #fff;
+	background: #3f2f38;
+	color: #f5bc92;
 }
 
 .bg-primary {
 	background: #1F618D;
-	color: #fff;
+	color: #f5bc92;
 }
 
 .l-heading {
@@ -187,20 +188,20 @@ p {
 .btn {
 	display: inline-block;
 	color: #f5bc92;
-	background: #c55059;
+	background: #3f2f38;
 	padding: 0.5rem 2rem;
 	border: none;
 	border-radius: 5px;
 }
 
 .btn:hover {
-	background: #c55059;
+	background: #3f2f38;
 	padding: 0.7rem 4rem;
 }
 
 .btn-dark {
-	background: #382835;
-	color: #fff;
+	background: #3f2f38;
+	color: #f5bc92;
 }
 
 .list {
@@ -214,12 +215,31 @@ p {
 }
 
 /* I hate css, but i too lazy come up with a good name */
+#what {
+	color: #f5bc92;
+}
+
 #what .items {
 	display: flex;
 	padding: 1rem;
 }
 
 #what .items .item {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+#additionalInfo {
+	color: #f5bc92;
+}
+
+#additionalInfo .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#additionalInfo .items .item {
 	flex: 1;
 	text-align: center;
 	padding: 1rem;
@@ -241,7 +261,7 @@ p {
 }
 
 #who div li a {
-	color: #fff;
+	color: #f5bc92;
 	text-decoration: underline;
 	font-family: monospace;
 	font-weight: bold;
@@ -249,7 +269,7 @@ p {
 }
 
 #who div li a:hover {
-	color: #fff;
+	color: #f5bc92;
 	font-family: monospace;
 	font-weight: bold;
 	font-size:20px;

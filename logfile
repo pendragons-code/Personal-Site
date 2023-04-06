@@ -4,5 +4,4 @@
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node --max-old-space-size=3072 app.js`[39m
 Running app!
-Hanging onto dear life at 31785
-Currently listening at http://localhost:3000!
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
