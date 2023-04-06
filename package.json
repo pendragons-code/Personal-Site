@@ -4,7 +4,7 @@
 "description": "",
 "main": "app.js",
 "scripts": {
-	"dev": "nodemon app.js"
+	"dev": "nodemon --max-old-space-size=3072 app.js> logfile 2> errfile"
  },
 "keywords": [],
 "author": "",
