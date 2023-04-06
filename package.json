@@ -1,19 +1,22 @@
 {
-  "name": "mainsite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+	"name": "mainsite",
+"version": "1.0.0",
+"description": "",
+"main": "app.js",
+"scripts": {
+	"dev": "nodemon app.js"
+ },
+"keywords": [],
+"author": "",
+"license": "ISC",
+"dependencies": {
 	"dotenv": "^16.0.3",
-	"ejs": "^3.1.9",
-	"express": "^4.18.2",
-	"express-rate-limit": "^6.7.0",
-	"helmet": "^6.0.1"
-  }
+"ejs": "^3.1.9",
+"express": "^4.18.2",
+"express-rate-limit": "^6.7.0",
+"helmet": "^6.0.1"
+ },
+"devDependencies": {
+	"nodemon": "^2.0.22"
+ }
 }

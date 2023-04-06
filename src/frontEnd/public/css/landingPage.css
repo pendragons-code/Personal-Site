@@ -62,7 +62,7 @@ p {
   background-color: #1F618D;
 }
 #showcase {
-	background: #382835 url('/2825727.gif') no-repeat center center/cover;
+	background: #382835 url('/wallpaper2.gif') no-repeat center center/cover;
 	height: 100vh;
 	color: #fff;
 	position: relative;
@@ -83,10 +83,14 @@ p {
 	right: 0;
 	overflow: hidden;
 	bottom: 0;
-	color: #fff;
+	color: #f5bc92;
 	background-color: rgba(0,0,0,0.4);
 }
-
+#showcase .showcase-content .l-heading:hover {
+	font-size: 5rem;
+	margin-bottom: 0.8rem;
+	line-height: 1;
+}
 #navbar {
 	display: flex;
 	position: sticky;
@@ -182,15 +186,16 @@ p {
 
 .btn {
 	display: inline-block;
-	color: #fff;
-	background: #1F618D;
+	color: #f5bc92;
+	background: #c55059;
 	padding: 0.5rem 2rem;
 	border: none;
 	border-radius: 5px;
 }
 
 .btn:hover {
-	background: #35637e;
+	background: #c55059;
+	padding: 0.7rem 4rem;
 }
 
 .btn-dark {
@@ -253,7 +258,7 @@ p {
 
 
 #who .who-img {
-	background: url("/wallpaper.gif") center center/cover;
+	background: url("/pixel-jeff-rain-3.gif") center center/cover;
 	height: 70 vh;
 }
 

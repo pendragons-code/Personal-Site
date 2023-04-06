@@ -28,14 +28,13 @@
 	}
 }
 
-@media (max-height: 568px) {
+@media (max-height: 1920px) {
 	#showcase .showcase-content {
-		margin-top: -2rem;
-		top: 140px;
+		margin-top: -6.85rem;
 	}
 
 	.l-heading {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.lead {
