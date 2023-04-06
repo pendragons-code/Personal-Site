@@ -1,0 +1,8 @@
+[33m[nodemon] 2.0.22[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node --max-old-space-size=3072 app.js`[39m
+Running app!
+Hanging onto dear life at 31785
+Currently listening at http://localhost:3000!
