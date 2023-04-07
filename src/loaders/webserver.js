@@ -8,7 +8,7 @@ const frontEnd = require("./frontEnd.js")
 
 if(!port) console.log("Port is empty and will be assumed to be 3000!")
 
-app.use(function(req, res,next) {
+app.use(function(req, res, next) {
 	res.setHeader("Content-Security-Policy", "frame-ancestors 'self';")
 	next()
 })
