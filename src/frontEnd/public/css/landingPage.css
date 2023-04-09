@@ -95,7 +95,7 @@ p {
 #navbar {
 	display: flex;
 	position: sticky;
-	top:0;
+	top: 0;
 	background: #3f2f38;
 	color: #f5bc92;
 	justify-content: space-between;
@@ -285,7 +285,7 @@ p {
 #weather {
 	text-align: center;
 	display: flex;
-	height: 50vh;
+	height: 30vh;
 }
 
 #weather div {

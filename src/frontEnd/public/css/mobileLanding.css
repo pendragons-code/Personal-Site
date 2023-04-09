@@ -22,22 +22,34 @@
 	#showcase .showcase-content {
 		top: 110px;
 	}
-
+	#weather {
+		height: 40vh;
+	}
 	#who .who-img {
 		display: none;
 	}
 }
 
-@media (max-height: 1920px) {
-	#showcase .showcase-content {
-		margin-top: -6.85rem;
+@media all and (orientation:landscape) {
+	#who {
+		height: 90vh
+	}
+	#weather {
+		height: 65vh
 	}
 
+	#showcase .showcase-content {
+		margin-top: -6.85rem;
+		top: 110px;
+	}
 	.l-heading {
 		font-size: 2rem;
 	}
 
 	.lead {
 		font-size: 1rem;
+	}
+	#who .who-img {
+		display: none;
 	}
 }
