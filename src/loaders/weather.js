@@ -1,7 +1,7 @@
 const { db } = require("./dataBase")
 const env = require("dotenv").config()
 const axios = require("axios")
-setInterval(async function() {
+async function getWeather() {
 	let newWeatherDateOBJ = new Date()
 	let newWeatherDate = `${newWeatherDateOBJ.getDate()}-${newWeatherDateOBJ.getMonth()+1}-${newWeatherDateOBJ.getFullYear()}`
 	let currentWeather = await db.get("weather")
@@ -30,5 +30,6 @@ setInterval(async function() {
 	let newWeatherInfo = [result.data.daily.data[0], newWeatherDate, style]
 		await db.set("weather", newWeatherInfo)
 	})
-
-}, 3.6e+6)
+}
+getWeather()
+setInterval(getWeather, 3.6e+6)
