@@ -9,6 +9,10 @@
 	margin-bottom: 0;
 }
 
+#showcase .showcase-content {
+	font-size: 3;
+}
+
 @media(max-width: 500px) {
 	#navbar {
 		flex-direction: column;
