@@ -9,10 +9,10 @@
 	margin-bottom: 0;
 }
 
-#showcase .showcase-content {
-	font-size: 2;
-}
 
+.l-heading {
+	font-size: 1rem;
+}
 @media(max-width: 500px) {
 	#navbar {
 		flex-direction: column;
@@ -26,6 +26,12 @@
 	#showcase .showcase-content {
 		margin-top: -6.80rem;
 		top: 110px;
+	}
+	#showcase .showcase-content .l-heading {
+		font-size: 1rem;
+	}
+	#showcase .showcase-content .l-heading:hover {
+		font-size: 1.5rem;
 	}
 	#weather {
 		height: 40vh;
@@ -46,9 +52,6 @@
 	#showcase .showcase-content {
 		margin-top: -6.85rem;
 		top: 110px;
-	}
-	.l-heading {
-		font-size: 1rem;
 	}
 
 	.lead {

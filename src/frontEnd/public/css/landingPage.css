@@ -87,8 +87,13 @@ p {
 	color: #f5bc92;
 	background-color: rgba(0,0,0,0.4);
 }
+
+#showcase .showcase-content .l-heading {
+	font-size: 3rem;
+}
+
 #showcase .showcase-content .l-heading:hover {
-	font-size: 5rem;
+	font-size: 4rem;
 	margin-bottom: 0.8rem;
 	line-height: 1;
 }
@@ -152,7 +157,7 @@ p {
 }
 
 .l-heading {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin-bottom: 0.75rem;
 	line-height: 1;
 }
