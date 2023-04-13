@@ -8,3 +8,7 @@ cd Personal-Site
 npm i
 node .
 ```
+# load-balancing
+Will work on redirecting to alt links.          
+Will prompt users to use mirror servers.        
+E.g: on the nav bar I could add another button that gives a dropdown menu of urls by country. India: india.pendragonscode.xyz
