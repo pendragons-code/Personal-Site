@@ -19,3 +19,9 @@
 	align-self: center;
 	margin-bottom: 0
 }
+
+#weather {
+	text-align: center;
+	display: flex;
+	height: 30vh;
+}
