@@ -290,7 +290,7 @@ p {
 #weather {
 	text-align: center;
 	display: flex;
-	height:  50vh;
+	height:  40vh;
 }
 
 #weather div {
