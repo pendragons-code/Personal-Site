@@ -20,6 +20,8 @@ module.exports = {
 			\n</ul>`
 		const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 		const getRandomGreet = greet[Math.floor(Math.random() * greet.length)]
+		// Will move quote generation to client side
+		// temporarily made it server side because I had some issues getting it to render on replit. Turns out to actually be a problem on replit's end at the time, bot mine.
 		return res.render("landingPage.ejs", { quote: getRandomQuote, randomGreet: getRandomGreet.replace(/ /g, "&nbsp;"), weather: weather, fontAwesome: fontAwesome })
 	}
 }

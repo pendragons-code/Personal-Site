@@ -290,7 +290,7 @@ p {
 #weather {
 	text-align: center;
 	display: flex;
-	height: 50vh;
+	height:  50vh;
 }
 
 #weather div {
@@ -309,6 +309,9 @@ p {
 	margin: auto;
 	padding: 0 2rem;
 	overflow: hidden;
+}
+.footer {
+	height: 15vh
 }
 @keyframes fadeIn {
 	0% {opacity:0;}
