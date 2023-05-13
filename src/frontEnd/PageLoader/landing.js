@@ -1,8 +1,8 @@
-const { quotes } = require("../../../configuration/quotes.json")
-const { db } = require("../../loaders/dataBase.js")
-const env = require("dotenv").config()
-let fontAwesome = process.env.font
-let greet = ["ᓚᘏᗢ", "/ᐠ. ｡.ᐟ\\ ᵐᵉᵒʷˎˊ˗", "Hello World!", "Pendragon's code!", "/ᐠ - ˕ -マ Ⳋ", "/\\___/\\<br>_____(=0 - 0=)_____<br>U  U", "ฅ^._.^ฅ", " ∧,,,,,∧<br>(  ̳• · • ̳)<br>/    づ♡", ">^•-•^<", "/ᐠ •ヮ• マ Ⳋ", "^•ﻌ•^ฅ♡", "/ᐠ｡ꞈ｡マ", "ᓚᘏᗢ ♡ ᗢᘏᓗ", "₍^ >ヮ<^₎", "/ᐠ_ ꞈ _ᐟ\\", "/) /)<br>( . .)<br></>( ><)"]
+const quotes = ["\"I like 8 bit art!\" - Pendragon's code", "\"Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.\" - Sir Thomas Malory", "\"The sweetness of love is short-lived, but the pain endures.\" - Sir Thomas Malory", "\"We shall now seek that which we shall not find.\" - Sir Thomas Malory", "\"Nay, I may not so, for I have promised to do the battle to the uttermost by the faith of my body, while me lasteth the life, and therefore I had liefer to die with honour than to live with shame; and if it were possible for me to die an hundred times, I had liefer to die so oft than yield me to thee; for though I lack weapon, I shall lack no worship, and if thou slay me weaponless that shall be thy shame.\" - King Arthur to Sir Accolon, Sir Thomas Malory"]
+const greet = ["ᓚᘏᗢ", "/ᐠ. ｡.ᐟ\\ ᵐᵉᵒʷˎˊ˗", "Hello World!", "Pendragon's code!", "/ᐠ - ˕ -マ Ⳋ", "/\\___/\\<br>_____(=0 - 0=)_____<br>U  U", "ฅ^._.^ฅ", " ∧,,,,,∧<br>(  ̳• · • ̳)<br>/    づ♡", ">^•-•^<", "/ᐠ •ヮ• マ Ⳋ", "^•ﻌ•^ฅ♡", "/ᐠ｡ꞈ｡マ", "ᓚᘏᗢ ♡ ᗢᘏᓗ", "₍^ >ヮ<^₎", "/ᐠ_ ꞈ _ᐟ\\", "/) /)<br>( . .)<br></>( ><)"]
+const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+const getRandomGreet = greet[Math.floor(Math.random() * greet.length)]
+
 module.exports = {
 	name: "/",
 	async execute(req, res) {
@@ -18,10 +18,7 @@ module.exports = {
 			\n<li>Wind is blowing towards <b>${getWeather[0].wind.dir}</b>.</li>
 			\n<li>Wind speed is about ${getWeather[0].wind.speed} km/h.</li>
 			\n</ul>`
-		const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
-		const getRandomGreet = greet[Math.floor(Math.random() * greet.length)]
-		// Will move quote generation to client side
-		// temporarily made it server side because I had some issues getting it to render on replit. Turns out to actually be a problem on replit's end at the time, bot mine.
-		return res.render("landingPage.ejs", { quote: getRandomQuote, randomGreet: getRandomGreet.replace(/ /g, "&nbsp;"), weather: weather, fontAwesome: fontAwesome })
+		return res.render("landingPage.ejs", { weather: weather, quote: getRandomQuote, greeting: getRandomGreet.replace(/ /g, "&nbsp;")  })
+		// turns out the error is for the icons only affected partly-sunny
 	}
 }

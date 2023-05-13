@@ -5,6 +5,8 @@ const { join } = require("path")
 const app = express()
 const port = process.env.port || 3000
 const frontEnd = require("./frontEnd.js")
+require("./dataBase.js")
+require("./weather.js")
 
 if(!port) console.log("Port is empty and will be assumed to be 3000!")
 

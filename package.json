@@ -2,7 +2,7 @@
 	"name": "mainsite",
 	"version": "1.0.0",
 	"description": "",
-	"main": "app.js",
+	"main": "./src/loaders/webserver.js",
 	"scripts": {
 		"dev": "nodemon --max-old-space-size=3072 app.js> logfile 2> errfile"
 	},
