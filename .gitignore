@@ -2,6 +2,5 @@ errfile
 logfile
 node_modules
 .env
-Dockerfile
 replit.nix
 package-lock.json
