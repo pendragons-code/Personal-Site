@@ -251,6 +251,17 @@ p {
 	padding: 1rem;
 }
 
+#foodWaste .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#foodWaste .items .item {
+	flex: 1;
+	text-align: left;
+	padding: 1rem;
+}
+
 #p {
 	display: flex;
 	height: 60vh;
