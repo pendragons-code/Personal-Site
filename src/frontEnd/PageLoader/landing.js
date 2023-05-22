@@ -6,7 +6,6 @@ module.exports = {
 		const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 		const getRandomGreet = greet[Math.floor(Math.random() * greet.length)]
 		let getWeather = await db.get("weather")
-		console.log(getWeather[2])
 		let weather = `
 		<br><p>${getWeather[0].summary}</p>
 			\n<ul>
