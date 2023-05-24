@@ -10,3 +10,5 @@ npm i
 node .
 ```
 
+# This site
+This site is a site made in order to help achieve an online precense, it is pretty badly made due to my lack of skills.
