@@ -3,4 +3,5 @@ logfile
 node_modules
 .env
 replit.nix
+ecosystem.config.js
 package-lock.json

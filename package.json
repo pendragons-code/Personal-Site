@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "./src/loaders/webserver.js",
 	"scripts": {
+		"prod": "pm2 start ./src/loaders/webserver.js --watch --max-memory-restart 3G --log ./logfile.txt --error ./errfile.txt",
 		"start": "nodemon --max-old-space-size=3072 ./src/loaders/webserver.js > logfile 2> errfile"
 	},
 	"keywords": [],
