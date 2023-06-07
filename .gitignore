@@ -5,3 +5,4 @@ node_modules
 replit.nix
 ecosystem.config.js
 package-lock.json
+.env.production
