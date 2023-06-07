@@ -1,4 +1,4 @@
-const env = require("dotenv").config()
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 const axios = require("axios")
 async function getWeather() {
 	let newWeatherDateOBJ = new Date()
