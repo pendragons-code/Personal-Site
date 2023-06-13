@@ -16,11 +16,13 @@ async function getWeather() {
 		}
 	}
 
-	axios.request(options)
-	.catch(async () => {
+	await axios.request(options)
+	.catch(async (error) => {
 		await db.set("weather", [ currentWeather[0], currentWeather[1] ])
+		console.error(error)
 	})
 	.then(async (result) => {
+		console.log(result)
 		let style = ""
 		if(result.detail) return await db.set("weather", [ currentWeather[0], currentWeather[1] ])
 		if(result.data.daily.data[0].weather.includes("cloudy") || result.data.daily.data[0].weather === "overcast") style = `<i class="fa-solid fa-cloud fa-beat-fade" style="color: #f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`

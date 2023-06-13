@@ -1,0 +1,351 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body {
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+	font-family: "monospace";
+	font-weight: "bold";
+}
+
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0.75rem 0;
+}
+
+.dropbtn {
+  background-color: #24283b;
+  color: #bbc5ef;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bbc5ef;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #1F618D;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #1F618D;
+}
+#showcase {
+	background: #24283b url('/tokyonight.gif') no-repeat center center/cover;
+	height: 100vh;
+	color: #bfc9f3;
+	position: relative;
+}
+
+#showcase .showcase-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 2rem;
+	/* Overlay */
+	position:absolute;
+	top:0;
+	left:0;
+	right: 0;
+	overflow: hidden;
+	bottom: 0;
+	color: #bfc9f3;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#showcase .showcase-content .l-heading {
+	font-size: 3rem;
+}
+
+#showcase .showcase-content .l-heading:hover {
+	font-size: 4rem;
+	margin-bottom: 0.8rem;
+	line-height: 1;
+}
+#navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	background: #24283b;
+	color: #bfc9f3;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 1rem;
+}
+
+#navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	border-bottom: 3px solid #bfc9f3;
+}
+
+
+#navbar ul li a {
+	color: #24283b;
+	padding: 0.75rem;
+	margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+	background: #24283b;
+	border-radius: 5px;
+}
+.container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.text-primary {
+	color: #bfc9f3;
+}
+
+.bg-light {
+	background:  #24283b;
+	color: #bfc9f3;
+}
+
+.bg-dark {
+	background: #24283b;
+	color: #bfc9f3;
+}
+
+.bg-primary {
+	background: #1F618D;
+	color: #bfc9f3;
+}
+
+.l-heading {
+	font-size: 3rem;
+	margin-bottom: 0.75rem;
+	line-height: 1;
+}
+
+.m-heading {
+	font-size: 2rem;
+	margin-bottom: 0.75rem;
+	line-height: 1;
+}
+.s-heading {
+	font-size: 2rem;
+	margin-top: 0.75rem;
+	line-height: 1.1;
+}
+
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+.logo {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+	display: inline-block;
+	color: #bfc9f3;
+	background: #24283b;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background: #24283b;
+	padding: 0.7rem 4rem;
+}
+
+.btn-dark {
+	background: #24283b;
+	color: #bfc9f3;
+}
+
+.list {
+	margin: 0.5rem 0;
+	list-style: none;
+}
+
+.list li {
+	padding: 0.5rem 0;
+	border-bottom: #444 dotted 1px;
+}
+
+/* I hate css, but i too lazy come up with a good name */
+#what {
+	color: #bfc9f3;
+}
+
+#what .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#what .items .item {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+#additionalInfo {
+	color: #bfc9f3;
+}
+
+#additionalInfo .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#additionalInfo .items .item {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+#foodWaste .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#foodWaste .items .item {
+	flex: 1;
+	text-align: left;
+	padding: 1rem;
+}
+
+#p {
+	display: flex;
+	height: 60vh;
+}
+
+#who {
+	display: flex;
+	height: 60vh;
+}
+
+#who div {
+	flex: 1;
+	flex-basis: 80%;
+}
+
+#who div li a {
+	color: #bfc9f3;
+	text-decoration: underline;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#who div li a:hover {
+	color: #bfc9f3;
+	font-family: monospace;
+	font-weight: bold;
+	font-size:20px;
+	text-decoration: none;
+}
+
+
+#who .who-img {
+	background: url("/tokyonight2.webp") center center/cover;
+	height: 70 vh;
+}
+
+#weather {
+	text-align: center;
+	display: flex;
+	height:  40vh;
+}
+
+#weather div {
+	text-align: center;
+	flex: 1;
+	flex-basis: 80%;
+}
+
+#weather ul {
+	display: inline-block;
+	text-align: left;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+.footer {
+	height: 15vh
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}

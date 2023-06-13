@@ -21,7 +21,9 @@ app.set("view engine", "ejs")
 app.set("views", join(__dirname, "../frontEnd/views"))
 app.use(express.static(join(__dirname, "../frontEnd/public")))
 app.use(function(req, res) {
-	res.render("404.ejs")
+	let pages = ["404.ejs", "404tokyonight.ejs"]
+	let random404page = pages[Math.floor(Math.random() * pages.length)]
+	res.render(random404page)
 })
 
 app.use(helmet({

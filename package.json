@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "./src/loaders/webserver.js",
 	"scripts": {
-		"prod": "pm2 start ecosystem.config.js --env production",
+		"deploy": "pm2 start ecosystem.config.js --env production",
 		"start": "nodemon --max-old-space-size=3072 ./src/loaders/webserver.js > logfile 2> errfile"
 	},
 	"keywords": [],
