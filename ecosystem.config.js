@@ -11,7 +11,7 @@ module.exports = {
 		watch_delay: 1000,
 		ignore_watch: ["node_modules"],
 		max_memory_restart: "512M",
-		out_file: "./logfile.txt",
-		error_file: "./errorfile.txt"
+		out_file: "./logfile",
+		error_file: "./errorfile"
 	}]
 }
