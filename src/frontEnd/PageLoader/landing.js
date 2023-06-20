@@ -22,6 +22,7 @@ module.exports = {
 			\n<li>Wind speed is about ${getWeather[0].wind.speed} km/h.</li>
 			\n</ul>`
 		return res.render(randomPage, { weather: weather, quote: getRandomQuote, greeting: getRandomGreet.replace(/ /g, "&nbsp;")  })
-		// turns out the error is for the icons only affected partly-sunny
+
+		// You are probably wondering why i made 2 ejs files and render them randomly, instead of rendering it with variables that point to different css locations and stuff in that vein, but i would like to explain that the reason behind why 2 seperate files were done instead was that the backend now has less work and that during testing there was a difference that was noticable in terms of serving speed.
 	}
 }
