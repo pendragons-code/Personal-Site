@@ -1,4 +1,4 @@
-FROM node:bookworm-slim
+FROM node:lts-bullseye-slim
 WORKDIR /app
 RUN apk update && apk add git ca-certificates
 
