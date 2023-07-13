@@ -24,11 +24,10 @@ async function getWeather() {
 	.then(async (result) => {
 		let style = ""
 		if(result.detail) return await db.set("weather", [ currentWeather[0], currentWeather[1] ])
-		if(result.data.daily.data[0].weather.includes("cloudy") || result.data.daily.data[0].weather === "overcast") style = `<i class="fa-solid fa-cloud fa-beat-fade" style="color: #f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`
+		if(result.data.daily.data[0].weather.includes("cloudy") || result.data.daily.data[0].weather === "overcast" || result.data.daily.data[0].weather.includes("sunny")) style = `<i class="fa-solid fa-cloud fa-beat-fade" style="color: #f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`
 		if(result.data.daily.data[0].weather.includes("rain") || result.data.daily.data[0].weather.includes("shower")) style = `<i class="fa-solid fa-umbrella fa-beat-fade" style="color:#f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`
 		if(result.data.daily.data[0].weather.includes("storm")) style = `<i class="fa-solid fa-cloud-bolt fa-beat-fade" style="color: #f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`
-		if(result.data.daily.data[0].weather.includes("sunny")) style = `<i class="fa-solid fa-cloud fa-beat-fade" style="color: #f5bc92;"> </i> ${result.data.daily.data[0].weather.replaceAll("_", " ").toUpperCase()} (weather code)`
-	let newWeatherInfo = [result.data.daily.data[0], newWeatherDate, style]
+		let newWeatherInfo = [result.data.daily.data[0], newWeatherDate, style]
 		await db.set("weather", newWeatherInfo)
 	})
 }
