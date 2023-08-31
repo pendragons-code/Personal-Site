@@ -1,0 +1,58 @@
+<html lang="en">
+	<head>
+		<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta property="og:type" content="pendragonscode.xyz">
+		<meta property="og:site_name" content="Pendragon's main site.">
+		<meta property="og:title" content="Pendragon's main site.">
+		<meta property="og:description" content="A basic site that I made for fun.">
+		<meta name="theme-color" content="#1F618D">
+		<link rel="stylesheet" href="css/<%-randomLandingPageCss%>">
+		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/mobileLanding.css">
+		<link rel="stylesheet" media="screen and (max-width: 850px)" href="css/mobileLanding.css">
+		<title>Pendragon's code</title>
+		<script src="https://kit.fontawesome.com/be4616c9da.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body id="home">
+		<nav id="navbar">
+			<ul>
+				<div class="dropdown">
+					<button class="dropbtn">Navigation!</button>
+						<div class="dropdown-content">
+							<a href="https://pendragonscode.xyz/">Home!</a>
+							<a href="https://api.pendragonscode.xyz">API!</a>
+							<a href="https://pixeljeff.tumblr.com/post/675186511641264128/new-dawn-2022">Wallpaper 1!</a>
+							<a href="https://www.artstation.com/artwork/r9VlQe">Wallpaper 2!</a>
+							<a href="/foodwaste">Food Waste!</a>
+						</div>
+	
+				</div>
+			</ul>
+		</nav>
+		<section id="who">
+			<div class="who-img"></div>
+			<div class="who-text bg-dark p-2">
+				<h2 class="m-heading"><span>Reach out to me!</span></h2>
+				<p>It has come to my attention that one of my sites, with my contacts has went down!</p>
+				<h3>Here are some ways you can reach out to me!:</h3>
+					<br><li><a href="https://instagram.com/pendragonscode">Instagram</a></li>
+					<br><li><a href="https://github.com/pendragons-code">Github</a></li>
+					<br><li>Discord: pendragonscode</li>
+					<br><li>I like making random projects XD</li>
+			</div>
+		</section>
+		<section id="weather">
+			<div class="weather-text bg-dark p-2">
+				<h2 class="m-heading"><span> Weather: </span></h2>
+				<%-weather%>
+				<p>Singapore, Jurong (1.352230N, 103.711342E).</p>
+			</div>
+		</section>
+		<footer id="main-footer" class="bg-dark text-center py-1">
+			<div class="container">
+				<p><%-quote%></p>
+			</div>
+		</footer>
+	</body>
+</html>

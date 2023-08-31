@@ -1,12 +1,10 @@
 const quotes = ["\"I like 8 bit art!\"<br>- Pendragon's code", "\"Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.\"<br>- Sir Thomas Malory", "\"The sweetness of love is short-lived, but the pain endures.\"<br>- Sir Thomas Malory", "\"We shall now seek that which we shall not find.\"<br>- Sir Thomas Malory", "\"Nay, I may not so, for I have promised to do the battle to the uttermost by the faith of my body, while me lasteth the life, and therefore I had liefer to die with honour than to live with shame; and if it were possible for me to die an hundred times, I had liefer to die so oft than yield me to thee; for though I lack weapon, I shall lack no worship, and if thou slay me weaponless that shall be thy shame.\"<br>- King Arthur to Sir Accolon, Sir Thomas Malory"]
-const greet = ["ᓚᘏᗢ", "/ᐠ. ｡.ᐟ\\ ᵐᵉᵒʷˎˊ˗", "Hello World!", "Pendragon's code!", "/ᐠ - ˕ -マ Ⳋ", "/\\___/\\<br>_____(=0 - 0=)_____<br>U  U", "ฅ^._.^ฅ", " ∧,,,,,∧<br>(  ̳• · • ̳)<br>/    づ♡", ">^•-•^<", "/ᐠ •ヮ• マ Ⳋ", "^•ﻌ•^ฅ♡", "/ᐠ｡ꞈ｡マ", "ᓚᘏᗢ ♡ ᗢᘏᓗ", "₍^ >ヮ<^₎", "/ᐠ_ ꞈ _ᐟ\\", "/) /)<br>( . .)<br></>( ><)"]
 const landingPagesCss = ["landingPage.css", "landingPageTokyoNight.css"]
 module.exports = {
-	name: "/",
+	name: "contact",
 	async execute(req, res) {
-		const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
-		const getRandomGreet = greet[Math.floor(Math.random() * greet.length)]
 		const randomLandingPageCss = landingPagesCss[Math.floor(Math.random() * landingPagesCss.length)]
+		const getRandomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 		let getWeather = await db.get("weather")
 		let weatherFinalFromGet = getWeather[2]
 		if(randomLandingPageCss === "landingPageTokyoNight.css") weatherFinalFromGet = getWeather[2].replace("f5bc92", "bfc9f3")
@@ -21,6 +19,6 @@ module.exports = {
 			\n<li>Wind is blowing towards <b>${getWeather[0].wind.dir}</b>.</li>
 			\n<li>Wind speed is about ${getWeather[0].wind.speed} km/h.</li>
 			\n</ul>`
-		return res.render("landingPage.ejs", { weather: weather, quote: getRandomQuote, greeting: getRandomGreet.replace(/ /g, "&nbsp;"), randomLandingPageCss: randomLandingPageCss })
+		return res.render("contact.ejs", { weather: weather, quote: getRandomQuote, randomLandingPageCss: randomLandingPageCss })
 	}
 }
