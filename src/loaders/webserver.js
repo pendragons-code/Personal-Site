@@ -8,9 +8,6 @@ const frontEnd = require("./frontEnd.js")
 require("./dataBase.js")
 require("./weather.js")
 
-
-if(!port) console.log("Port is empty and will be assumed to be 3000!")
-
 app.use(function(req, res, next) {
 	res.setHeader("Content-Security-Policy", "frame-ancestors 'self';")
 	next()
