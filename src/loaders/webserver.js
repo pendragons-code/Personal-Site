@@ -17,6 +17,7 @@ app.use("/", frontEnd)
 app.set("view engine", "ejs")
 app.set("views", join(__dirname, "../frontEnd/views"))
 app.use(express.static(join(__dirname, "../frontEnd/public")))
+app.set('trust proxy', 1)
 app.use(function(req, res) {
 	let pages = ["landingPageTokyoNight.css", "landingPage.css"]
 	let random404pageCss = pages[Math.floor(Math.random() * pages.length)]
